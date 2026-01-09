@@ -665,8 +665,11 @@ main(void)
     // User specific IP Address Configuration.
     // Current implementation works with Static IP address only.
     //
-    unsigned long IPAddr = 0xC0A8010A;
-    unsigned long NetMask = 0xFFFF0000;
+    // unsigned long IPAddr = 0xC0A8010A;
+    // unsigned long NetMask = 0xFFFF0000;
+
+    unsigned long IPAddr = 0xC0FF010A; 
+    unsigned long NetMask = 0xFFFFFF00;
     unsigned long GWAddr = 0x00000000;
 
     //

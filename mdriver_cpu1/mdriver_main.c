@@ -308,16 +308,16 @@ void main(void)
             //---------------------
             // Overcurrent Protection
             //---------------------
-            for(channel_counter=0; channel_counter<NO_CHANNELS; channel_counter++){
-                if(fabsf(system_dyn_state.is[channel_counter]) > OVERCURRENT_THRESHOLD){
-                    // Overcurrent detected, issue stop to all channels
-                    unsigned int k;
-                    for(k=0; k<NO_CHANNELS; k++){
-                        fsm_req_flags_stop[k]=1;
-                    }
-                    break;
-                }
-            }
+            // for(channel_counter=0; channel_counter<NO_CHANNELS; channel_counter++){
+            //     if(fabsf(system_dyn_state.is[channel_counter]) > OVERCURRENT_THRESHOLD){
+            //         // Overcurrent detected, issue stop to all channels
+            //         unsigned int k;
+            //         for(k=0; k<NO_CHANNELS; k++){
+            //             fsm_req_flags_stop[k]=1;
+            //         }
+            //         break;
+            //     }
+            // }
 
             //---------------------
             // Control Law Execution & Output Actuation
